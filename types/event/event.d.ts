@@ -1,4 +1,8 @@
-declare namespace tbEvent {
+/**
+ * @file 事件
+ */
+
+declare namespace event {
   /**
    * 事件对象 https://docs.alipay.com/mini/framework/events#a-namefc3wdba%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1
    */

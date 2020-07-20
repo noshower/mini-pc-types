@@ -1,25 +1,32 @@
 {
   "name": "mini-pc-types",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "taobao-mini-app",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "dtslint types",
+    "ci": "npm run lint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noshower/mini-pc-types.git"
   },
   "keywords": [
+    "tinyapp",
     "mini-app",
     "ali",
     "taobao",
-    "qn"
+    "qn",
+    "types"
   ],
   "author": "noshower",
+  "types": "./types/index.d.ts",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/noshower/mini-pc-types/issues"
   },
-  "homepage": "https://github.com/noshower/mini-pc-types#readme"
+  "homepage": "https://github.com/noshower/mini-pc-types#readme",
+  "devDependencies": {
+    "dtslint": "^3.6.12",
+    "typescript": "^3.9.7"
+  }
 }

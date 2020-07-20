@@ -1,4 +1,4 @@
-declare namespace tbApp {
+declare namespace tbapp {
   interface IComponentLifeCycleMethods<D, P> {
     /**
      * 组件生命周期函数，组件创建时触发

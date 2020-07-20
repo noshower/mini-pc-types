@@ -2,20 +2,20 @@
  * @file tab
  */
 
-declare namespace tbEvent.tab {
-  interface onTapEvent extends tbEvent.ICustomEvent {
+declare namespace event.tab {
+  interface onTapEvent extends event.ICustomEvent {
     readonly detail: {
       readonly value: string;
     };
   }
 
-  interface onChangeEvent extends tbEvent.ICustomEvent {
+  interface onChangeEvent extends event.ICustomEvent {
     readonly detail: {
       readonly value: string;
     };
   }
 
-  interface onCloseEvent extends tbEvent.ICustomEvent {
+  interface onCloseEvent extends event.ICustomEvent {
     readonly detail: {
       readonly value: string;
     };

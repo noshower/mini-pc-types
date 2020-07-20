@@ -1,4 +1,4 @@
-declare namespace tbApp {
+declare namespace tbapp {
   type Query = Record<string, string | number>;
 
   interface IAppLaunchOptions {
