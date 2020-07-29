@@ -170,7 +170,7 @@ declare namespace my {
   /**
    * 预览图片。不支持本地图片路径。
    */
-  function previewImage(): void;
+  function previewImage(options: IPreviewImageOptions): void;
 
   interface ISaveImageOptions {
     /**

@@ -182,4 +182,30 @@ declare namespace my {
    * 取消网络状态变化的监听
    */
   function offNetworkStatusChange(): void;
+
+  interface IHttpRequestOptions {
+    /**
+     * HTTP接口路径
+     */
+    path: string;
+    /**
+     * GET,POST。必须是大写
+     */
+    method?: 'GET' | 'POST';
+    /**
+     * URL参数
+     */
+    params: Object;
+    /**
+     * 放置在BODY中的参数
+     */
+    body?: Object;
+    /**
+     * HTTP请求头参数
+     */
+    headers?: Object;
+    exts?: Object;
+  }
+
+  function httpRequest(options: IHttpRequestOptions): any;
 }
