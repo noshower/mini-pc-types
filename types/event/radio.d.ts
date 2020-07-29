@@ -17,9 +17,9 @@ declare namespace tinyapp.radiogroup {
   /**
    * 选中值改变时的事件
    */
-  interface IChangeEvent extends tinyapp.ICustomEvent {
+  interface IChangeEvent<T = string | number> extends tinyapp.ICustomEvent {
     readonly detail: {
-      readonly value: string | number;
+      readonly value: T;
     };
   }
 }
