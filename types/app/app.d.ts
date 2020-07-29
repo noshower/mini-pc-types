@@ -1,4 +1,8 @@
-declare namespace tbapp {
+/**
+ * @file 应用
+ */
+
+declare namespace tinyapp {
   type Query = Record<string, string | number>;
 
   interface IAppLaunchOptions {

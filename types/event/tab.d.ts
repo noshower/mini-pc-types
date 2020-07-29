@@ -2,20 +2,29 @@
  * @file tab
  */
 
-declare namespace event.tab {
-  interface onTapEvent extends event.ICustomEvent {
+declare namespace tinyapp.tab {
+  /**
+   * 点击单个选项卡时触发的回调
+   */
+  interface ITapEvent extends tinyapp.ICustomEvent {
     readonly detail: {
       readonly value: string;
     };
   }
 
-  interface onChangeEvent extends event.ICustomEvent {
+  /**
+   * 选项卡发生切换时的事件回调
+   */
+  interface IChangeEvent extends tinyapp.ICustomEvent {
     readonly detail: {
       readonly value: string;
     };
   }
 
-  interface onCloseEvent extends event.ICustomEvent {
+  /**
+   * 选项卡被关闭时的事件回调
+   */
+  interface ICloseEvent extends tinyapp.ICustomEvent {
     readonly detail: {
       readonly value: string;
     };

@@ -217,7 +217,7 @@ declare namespace my.qn {
    * 小程序启动的时候（PC 端实际检查时机是第一次使用 my.qn.database 时），会检查 my.qn.database 对应的数据库大小。
    * 当数据库大小未超过警告值（PC 端默认 100MB）的时候，触发此事件。（当数据库大小超过警告值的时候，会触发 my.qn.onDatabaseLimitWarning）
    */
-  function onDatabaseLimitDebug(callback: IOnDatabaseLimitCallback);
+  function onDatabaseLimitDebug(callback: IOnDatabaseLimitCallback): void;
 
   interface IQueryDBSizeSuccessResult {
     /**
@@ -246,7 +246,7 @@ declare namespace my.qn {
    *
    *  收到此事件后，小程序必须进行数据清理工作，如果小程序退出时，数据库大小超过了上限（PC 端默认 150MB），系统将删除数据库。
    */
-  function onDatabaseLimitWarning(callback: IOnDatabaseLimitCallback);
+  function onDatabaseLimitWarning(callback: IOnDatabaseLimitCallback): void;
 
   interface IDatabaseSuccessResult {
     /**

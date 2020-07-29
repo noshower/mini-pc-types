@@ -1,4 +1,4 @@
-declare namespace tbapp {
+declare namespace tinyapp {
   type OnShareAppMessageOptions =
     | {
         from: 'button';
