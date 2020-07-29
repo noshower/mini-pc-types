@@ -14,6 +14,10 @@
 
 [淘宝 PC 端 API 文档](https://miniapp.open.taobao.com/docV3.htm?docId=117557&docType=1&source=search)
 
+## 1.0.3
+
+- 增加 pc 端所有组件的事件类型
+
 ## 安装
 
 ```
