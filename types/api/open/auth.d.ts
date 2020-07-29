@@ -37,7 +37,7 @@ declare namespace my {
    *
    * 通过一次用户授权，得到订单、商品等全量的获取的能力。scopes传入参数为"*"，触发全量授权的接口。（千牛7.11.60N以上版本支持）
    */
-  function authorize(): void;
+  function authorize(options: IAuthorizeOptions): void;
 
   interface IGetAuthUserInfoSuccessOptions {
     /**
@@ -68,7 +68,7 @@ declare namespace my {
   /**
    * 客户端获取用户信息
    */
-  function getAuthUserInfo(): void;
+  function getAuthUserInfo(options: IGetAuthUserInfoOptions): void;
 }
 
 declare namespace my.qn {

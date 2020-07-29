@@ -197,5 +197,5 @@ declare namespace my {
   /**
    * 保存图片到本地
    */
-  function saveImage(): void;
+  function saveImage(options: ISaveImageOptions): void;
 }
