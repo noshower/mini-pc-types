@@ -3,9 +3,9 @@
  */
 
 declare namespace tinyapp.checkboxGroup {
-  interface IChangeEvent extends tinyapp.ICustomEvent {
+  interface IChangeEvent<T = string[]> extends tinyapp.ICustomEvent {
     readonly detail: {
-      readonly value: string[];
+      readonly value: T;
     };
   }
 }
