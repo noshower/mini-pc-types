@@ -152,5 +152,5 @@ declare namespace my {
   /**
    * 显示加载提示
    */
-  function showLoading(): void;
+  function showLoading(options: IShowLoadingOptions): void;
 }
