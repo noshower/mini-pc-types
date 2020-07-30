@@ -18,5 +18,6 @@
 /// <reference path="./switch.d.ts" />
 /// <reference path="./tab.d.ts" />
 /// <reference path="./table.d.ts" />
+/// <reference path="./text.d.ts" />
 /// <reference path="./textarea.d.ts" />
 /// <reference path="./view.d.ts" />
