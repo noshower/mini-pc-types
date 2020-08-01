@@ -130,7 +130,7 @@ declare namespace my {
   /**
    * 隐藏加载提示。
    */
-  function hideLoading(options: IHideLoadingOptions): void;
+  function hideLoading(options?: IHideLoadingOptions): void;
 
   /**
    * 隐藏弱提示
