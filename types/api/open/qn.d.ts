@@ -47,4 +47,32 @@ declare namespace my.qn {
    * 打开千牛改价格窗口
    */
   function changePrice(options: IChangePriceOptions): void;
+
+  interface IOpenChatOptions {
+    /**
+     * 聊天的对象的nick，nick前请带上nick域, 所属域可选值为：cntaobao|cnalichn|enaliint, cntaobao:是淘宝用户, cnalichn:是中文站用户,enaliint:是国际站用户
+     */
+    nick: string;
+    /**
+     * 打开聊天窗，同时携带输入框文本
+     */
+    text?: string;
+    /**
+     * 调用成功的回调函数
+     */
+    success?: (res: any) => void;
+    /**
+     * 调用失败的回调函数
+     */
+    fail?: (res: any) => void;
+    /**
+     * 调用结束的回调函数（调用成功、失败都会执行）
+     */
+    complete?: (res: any) => void;
+  }
+
+  /**
+   * 打开聊天
+   */
+  function openChat(options: IOpenChatOptions): void;
 }
