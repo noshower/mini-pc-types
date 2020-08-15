@@ -118,4 +118,25 @@ declare namespace my.qn {
    * 小程序打开原插件页面
    */
   function navigateToQAPPC(options: INavigateToQAPPCOptions): void;
+
+  interface INavigateToWebPageOptions {
+    /**
+     * 打开页面的H5链接
+     */
+    url: string;
+    /**
+     * 接口调用成功的回调函数
+     */
+    success?: (res: boolean) => void;
+
+    /**
+     * 接口调用失败的回调函数。参数为 error、errorMessage，具体见错误码列表。
+     */
+    fail?: (res: any) => void;
+  }
+
+  /**
+   * 该API是提供在千牛应用中小程序通过使用千牛H5容器打开H5页面的能力。
+   */
+  function navigateToWebPage(options: INavigateToWebPageOptions): void;
 }
