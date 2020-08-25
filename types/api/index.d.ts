@@ -32,4 +32,6 @@ declare namespace my {
   }
 
   function createSelectorQuery(params?: Record<string, any>): ISelectorQuery;
+
+  type isIDE = boolean;
 }
