@@ -5,6 +5,7 @@
 /// <reference path="./media/index.d.ts" />
 /// <reference path="./open/index.d.ts" />
 /// <reference path="./ui/index.d.ts" />
+/// <reference path="./webview/webview.d.ts" />
 
 declare namespace my {
   interface IBoundingClientRect {
@@ -16,9 +17,11 @@ declare namespace my {
     left?: number;
   }
 
-  type ScrollOffset = Record<'scrollTop' | 'scrollLeft', number>;
+  type ScrollOffset = Record<"scrollTop" | "scrollLeft", number>;
 
-  type SelectorResult = ReadonlyArray<null | Readonly<IBoundingClientRect> | Readonly<ScrollOffset>>;
+  type SelectorResult = ReadonlyArray<
+    null | Readonly<IBoundingClientRect> | Readonly<ScrollOffset>
+  >;
 
   type ISelectorExecCallback = (ret: SelectorResult) => void;
 

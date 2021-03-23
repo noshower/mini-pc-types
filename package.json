@@ -1,6 +1,6 @@
 {
   "name": "mini-pc-types",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "taobao-mini-app",
   "scripts": {
     "lint": "dtslint types",
