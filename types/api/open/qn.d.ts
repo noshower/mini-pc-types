@@ -75,4 +75,18 @@ declare namespace my.qn {
    * 打开聊天
    */
   function openChat(options: IOpenChatOptions): void;
+
+  interface IImGetActiveUserOptions {
+    success?: (res: IImGetActiveUserSuccessResult) => void;
+    fail?: (res: any) => void;
+  }
+
+  interface IImGetActiveUserSuccessResult {
+    user_nick: string;
+  }
+
+  /**
+   * 获取当前IM旺旺联系人
+   */
+  function imGetActiveUser(): void;
 }
